@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/cardapio-io-angular'),
+      dir: require('path').join(__dirname, './coverage/disk-breja-cotia'),
       subdir: '.',
       reporters: [
         { type: 'html' },

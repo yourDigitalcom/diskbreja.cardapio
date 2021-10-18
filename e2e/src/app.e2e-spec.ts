@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', async () => {
     await page.navigateTo();
-    expect(await page.getTitleText()).toEqual('cardapio-io-angular app is running!');
+    expect(await page.getTitleText()).toEqual('disk-breja-cotia app is running!');
   });
 
   afterEach(async () => {
