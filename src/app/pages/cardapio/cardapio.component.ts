@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UtilService } from 'src/app/services/utils/util.service';
 
 @Component({
   selector: 'app-cardapio',
@@ -8,24 +9,26 @@ import { Component, OnInit } from '@angular/core';
 export class CardapioComponent implements OnInit {
 
   public list = [
-    {name:'Promoção'},
-    {name:'Cervejas'},
-    {name:'Pingas'},
-    {name:'Whiskys'},
-    {name:'Combos'},
-    {name:'Águas'},
-    {name:'Energéticos'},
-    {name:'Cooler'},
+    {name:'Promoção', route:'promocao'},
+    {name:'Cervejas', route:'cervejas'},
+    {name:'Pingas', route:'pingas'},
+    {name:'Whiskys', route:'whiskys'},
+    {name:'Combos', route:'combos'},
+    {name:'Águas', route:'aguas'},
+    {name:'Energéticos', route:'energeticos'},
+    {name:'Cooler', route:'cooler'},
   ];
 
-  constructor() { }
+  constructor(
+    private readonly util: UtilService
+  ) { }
 
   ngOnInit(): void {
   }
 
-  public receiverClick(event: any): void {
-    console.log("Event ->", event);
-    
+  public receiverClick(product: string): void {
+    const route = product;
+    this.util.goToPage(route);
   }
 
 }

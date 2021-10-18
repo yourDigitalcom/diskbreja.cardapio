@@ -1,16 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { ServiceWorkerModule } from '@angular/service-worker';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CommonModule } from '@angular/common';
+
+import { RoutesRoutingModule } from './routes/routes-routing.module';
+import { MaterialModule } from './modules/material/material.module';
 
 import { AppComponent } from './app.component';
 import { ListaComponent } from './components/lista/lista.component';
 import { CardComponent } from './components/card/card.component';
 import { CardapioComponent } from './pages/cardapio/cardapio.component';
 import { CervejasComponent } from './pages/cervejas/cervejas.component';
-import { RoutesModule } from './routes/routes.module';
-import { RoutesRoutingModule } from './routes/routes-routing.module';
-import { CommonModule } from '@angular/common';
-import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,7 @@ import { environment } from '../environments/environment';
     CervejasComponent
   ],
   imports: [
+    MaterialModule,
     BrowserModule,
     CommonModule,
     RoutesRoutingModule,
