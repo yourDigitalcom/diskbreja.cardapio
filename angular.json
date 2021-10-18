@@ -39,7 +39,7 @@
               "node_modules/bootstrap/dist/js/bootstrap.js"
             ],
             "serviceWorker": true,
-            "ngswConfigPath": "ngsw-config.json"
+            "ngswConfigPath": "./src/ngsw-config.json"
           },
           "configurations": {
             "production": {
