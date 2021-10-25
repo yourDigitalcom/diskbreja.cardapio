@@ -21,7 +21,7 @@ export class ListaComponent implements OnInit {
     this.itens.push({marca: 'kaiser', logo: '' ,color: 'red'});
     this.itens.push({marca: 'crystal', logo: '' ,color: 'yellow'});
     this.itens.push({marca: 'bohemia', logo: '' ,color: 'white'});
-    this.itens.push({marca: 'bavária', logo: '' ,color: 'green'});
+    this.itens.push({marca: 'bavaria', logo: '' ,color: 'green'});
     this.itens.push({marca: 'chopp-brahma', logo: '' ,color: 'red'});
   }
 

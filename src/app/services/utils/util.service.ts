@@ -1,3 +1,4 @@
+import { Location } from '@angular/common';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -7,10 +8,15 @@ import { Router } from '@angular/router';
 export class UtilService {
 
   constructor(
-    private readonly router: Router
+    private readonly _router: Router,
+    private readonly _location: Location
   ) { }
 
   public goToPage(route: string): void {
-    this.router.navigate([route]);
+    this._router.navigate([route]);
+  }
+
+  public onBackPage(): void {
+    this._location.back();
   }
 }

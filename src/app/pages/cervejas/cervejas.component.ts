@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UtilService } from '../../services/utils/util.service';
 
 @Component({
   selector: 'app-cervejas',
@@ -34,9 +35,15 @@ export class CervejasComponent implements OnInit {
     "Stella Artois",
   ]
 
-  constructor() { }
+  constructor(
+    private readonly _utils: UtilService
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  public goBack(): void {
+    this._utils.onBackPage();
   }
 
 }
