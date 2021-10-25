@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "disk-breja-cotia": {
+    "cardapio-io-angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/disk-breja-cotia",
+            "outputPath": "dist/cardapio-io-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -74,18 +74,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "disk-breja-cotia:build"
+            "browserTarget": "cardapio-io-angular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "disk-breja-cotia:build:production"
+              "browserTarget": "cardapio-io-angular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "disk-breja-cotia:build"
+            "browserTarget": "cardapio-io-angular:build"
           }
         },
         "test": {
@@ -124,18 +124,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "disk-breja-cotia:serve"
+            "devServerTarget": "cardapio-io-angular:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "disk-breja-cotia:serve:production"
+              "devServerTarget": "cardapio-io-angular:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "disk-breja-cotia",
+  "defaultProject": "cardapio-io-angular",
   "cli": {
     "analytics": false
   }
