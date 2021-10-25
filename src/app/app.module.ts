@@ -9,11 +9,12 @@ import { MaterialModule } from './modules/material/material.module';
 
 import { AppComponent } from './app.component';
 import { ListaComponent } from './components/lista/lista.component';
-import { CardComponent } from './components/card/card.component';
+import { CardComponent } from './components/menu/menu.component';
 import { CardapioComponent } from './pages/cardapio/cardapio.component';
 import { CervejasComponent } from './pages/cervejas/cervejas.component';
 import { environment } from '../environments/environment';
 import { MatTabsModule } from '@angular/material/tabs';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -21,9 +22,11 @@ import { MatTabsModule } from '@angular/material/tabs';
     ListaComponent,
     CardComponent,
     CardapioComponent,
-    CervejasComponent
+    CervejasComponent,
+    NavbarComponent
   ],
   imports: [
+    BrowserAnimationsModule,
     MaterialModule,
     BrowserModule,
     CommonModule,
